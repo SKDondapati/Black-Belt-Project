@@ -318,7 +318,7 @@ MonoBehaviour:
   openDoor: {fileID: 221005754}
   player: {fileID: 94157387}
   resetLevel: Level 8A
-  nextLevel: WinA
+  nextLevel: Level 9A
   A: 0
   B: 0
   C: 0
