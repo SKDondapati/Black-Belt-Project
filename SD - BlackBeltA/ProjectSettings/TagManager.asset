@@ -3,15 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - lava
+  - Key
+  - checkpoint
+  - LockedDoor
+  - Ground
+  - OpenDoor
+  - jump
+  - ClosedDoor
+  - speed
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - lava
   - 
   - 
   - 

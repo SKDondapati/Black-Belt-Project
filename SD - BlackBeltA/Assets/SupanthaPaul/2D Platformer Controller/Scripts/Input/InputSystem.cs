@@ -19,10 +19,10 @@ namespace SupanthaPaul
 			return Input.GetButtonDown(JumpInput);
 		}
 
-		public static bool Dash()
+		/*public static bool Dash()
 		{
 			return Input.GetButtonDown(DashInput);
-		}
+		}*/
 
 	}
 }

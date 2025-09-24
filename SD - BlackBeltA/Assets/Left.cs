@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Left : MonoBehaviour
 {
     public float speed;
@@ -11,6 +12,7 @@ public class Left : MonoBehaviour
     void Start()
     {
        startPosition = transform.position;
+       
     }
 
     void Update()

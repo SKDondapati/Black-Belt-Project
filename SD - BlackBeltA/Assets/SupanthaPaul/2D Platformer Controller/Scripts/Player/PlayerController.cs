@@ -196,7 +196,7 @@ namespace SupanthaPaul
 
 			if (!isCurrentlyPlayable) return;
 			// if not currently dashing and hasn't already dashed in air once
-			if (!isDashing && !m_hasDashedInAir && m_dashCooldown <= 0f)
+			/*if (!isDashing && !m_hasDashedInAir && m_dashCooldown <= 0f)
 			{
 				// dash input (left shift)
 				if (InputSystem.Dash())
@@ -218,7 +218,7 @@ namespace SupanthaPaul
 			if (m_hasDashedInAir && isGrounded)
 				m_hasDashedInAir = false;
 			
-			// Jumping
+			// Jumping*/
 			if(InputSystem.Jump() && m_extraJumps > 0 && !isGrounded && !m_wallGrabbing && 1 < 0)	// extra jumping
 			{
 				m_rb.velocity = new Vector2(m_rb.velocity.x, m_extraJumpForce); ;
