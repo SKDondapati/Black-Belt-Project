@@ -1,9 +1,11 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class Unlock : MonoBehaviour
 {
@@ -19,6 +21,8 @@ public class Unlock : MonoBehaviour
     public Boolean C;
     public float x;
     public float y;
+    public int q;
+    public Text deathText;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,16 +36,22 @@ public class Unlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        deathText.text = ("" + q);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "lava")
         {
+            q++;
             if (A == false)
             {
-                SceneManager.LoadScene(resetLevel);
+                //SceneManager.LoadScene(resetLevel);
+                transform.position = new Vector2(x, y);
+                key.SetActive(true);
+                lockedDoor.SetActive(true);
+                closedDoor.SetActive(false);
+                B = false;
             }
             else
             {

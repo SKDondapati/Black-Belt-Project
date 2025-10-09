@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
     public static int time = 0;
     public int minutes = 0;
     public int seconds = 0;
+    public int hours = 0;
     public Boolean lastScene = false;
     public Text TimerObj;
     private void Awake()
@@ -37,11 +38,21 @@ public class Timer : MonoBehaviour
         }
         if (lastScene == true)
         {
-            minutes = time / 60;
-            seconds = time % 60;
-            Debug.Log("Counter: " + time);
-            Debug.Log("" + minutes + ":" + seconds);
-            TimerObj.text = ("" + minutes + ":" + seconds);
+            if (time > 3600)
+            {
+                hours = time / 3600;
+                minutes = time / 60;
+                seconds = time % 60;
+                Debug.Log("Counter: " + time);
+                TimerObj.text = (hours + ":" + minutes + ":" + seconds);
+            }
+            else
+            {
+                minutes = time / 60;
+                seconds = time % 60;
+                Debug.Log("Counter: " + time);
+                TimerObj.text = ("" + minutes + ":" + seconds);
+            }
         }
     }
 }
