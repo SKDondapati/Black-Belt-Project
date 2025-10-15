@@ -21,7 +21,7 @@ public class Unlock : MonoBehaviour
     public Boolean C;
     public float x;
     public float y;
-    public int q;
+    public static int q;
     public Text deathText;
     // Start is called before the first frame update
     void Start()
