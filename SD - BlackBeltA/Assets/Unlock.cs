@@ -22,6 +22,7 @@ public class Unlock : MonoBehaviour
     public float x;
     public float y;
     public static int q;
+    public int death;
     public Text deathText;
     // Start is called before the first frame update
     void Start()
@@ -31,12 +32,18 @@ public class Unlock : MonoBehaviour
         C = false;
         x = transform.position.x;
         y = transform.position.y;
+        death = q;
     }
 
     // Update is called once per frame
     void Update()
     {
         deathText.text = ("" + q);
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            q = death;
+            SceneManager.LoadScene(resetLevel);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
