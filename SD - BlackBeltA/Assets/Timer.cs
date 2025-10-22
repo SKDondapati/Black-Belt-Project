@@ -14,6 +14,7 @@ public class Timer : MonoBehaviour
     public int hours = 0;
     public Boolean lastScene = false;
     public Text TimerObj;
+    public Text TimerCount;
     private void Awake()
     {
 
@@ -27,7 +28,22 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lastScene == false) {
+        if (time > 3600)
+        {
+            hours = time / 3600;
+            int x = time % 3600;
+            minutes = x / 60;
+            seconds = time % 60;
+            TimerCount.text = (hours + ":" + minutes + ":" + seconds);
+        }
+        else
+        {
+            minutes = time / 60;
+            seconds = time % 60;
+            TimerCount.text = ("" + minutes + ":" + seconds);
+        }
+
+            if (lastScene == false) {
             t += Time.deltaTime;
             if (t >= 1f)
             {
@@ -41,7 +57,8 @@ public class Timer : MonoBehaviour
             if (time > 3600)
             {
                 hours = time / 3600;
-                minutes = time / 60;
+                int x = time % 3600;
+                minutes = x / 60;
                 seconds = time % 60;
                 Debug.Log("Counter: " + time);
                 TimerObj.text = (hours + ":" + minutes + ":" + seconds);

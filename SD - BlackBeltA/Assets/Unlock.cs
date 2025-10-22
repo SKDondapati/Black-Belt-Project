@@ -24,6 +24,16 @@ public class Unlock : MonoBehaviour
     public static int q;
     public int death;
     public Text deathText;
+    public GameObject redFlag;
+    public GameObject greenFlag;
+    public GameObject redFlag1;
+    public GameObject greenFlag1;
+    public GameObject redFlag2;
+    public GameObject greenFlag2;
+    public GameObject redFlag3;
+    public GameObject greenFlag3;
+    public GameObject redFlag4;
+    public GameObject greenFlag4;
     // Start is called before the first frame update
     void Start()
     {
@@ -73,7 +83,7 @@ public class Unlock : MonoBehaviour
             }
         }               
 
-        if (collision.tag == "checkpoint")
+        /*if (collision.tag == "checkpoint")
         {
             A = true;
             if (B == true)
@@ -82,7 +92,7 @@ public class Unlock : MonoBehaviour
             }
             x = transform.position.x;
             y = transform.position.y;
-        }
+        }*/
 
         if (collision.tag == "Key")
         {
@@ -103,9 +113,109 @@ public class Unlock : MonoBehaviour
             SceneManager.LoadScene(nextLevel);
         }
 
-        if (collision.tag == "jump")
+        if (collision.tag == "flag")
         {
-            
+            A = true;
+            if (B == true)
+            {
+                C = true;
+            }
+            x = transform.position.x;
+            y = transform.position.y;
+            redFlag.SetActive(false);
+            greenFlag.SetActive(true);
+            redFlag1.SetActive(true);
+            greenFlag1.SetActive(false);
+            redFlag2.SetActive(true);
+            greenFlag2.SetActive(false);
+            redFlag3.SetActive(true);
+            greenFlag3.SetActive(false);
+            redFlag4.SetActive(true);
+            greenFlag4.SetActive(false);
+        }
+
+        if (collision.tag == "flag1")
+        {
+            A = true;
+            if (B == true)
+            {
+                C = true;
+            }
+            x = transform.position.x;
+            y = transform.position.y;
+            redFlag.SetActive(true);
+            greenFlag.SetActive(false);
+            redFlag1.SetActive(false);
+            greenFlag1.SetActive(true);
+            redFlag2.SetActive(true);
+            greenFlag2.SetActive(false);
+            redFlag3.SetActive(true);
+            greenFlag3.SetActive(false);
+            redFlag4.SetActive(true);
+            greenFlag4.SetActive(false);
+        }
+
+        if (collision.tag == "flag2")
+        {
+            A = true;
+            if (B == true)
+            {
+                C = true;
+            }
+            x = transform.position.x;
+            y = transform.position.y;
+            redFlag.SetActive(true);
+            greenFlag.SetActive(false);
+            redFlag1.SetActive(true);
+            greenFlag1.SetActive(false);
+            redFlag2.SetActive(false);
+            greenFlag2.SetActive(true);
+            redFlag3.SetActive(true);
+            greenFlag3.SetActive(false);
+            redFlag4.SetActive(true);
+            greenFlag4.SetActive(false);
+        }
+
+        if (collision.tag == "flag3")
+        {
+            A = true;
+            if (B == true)
+            {
+                C = true;
+            }
+            x = transform.position.x;
+            y = transform.position.y;
+            redFlag.SetActive(true);
+            greenFlag.SetActive(false);
+            redFlag1.SetActive(true);
+            greenFlag1.SetActive(false);
+            redFlag2.SetActive(true);
+            greenFlag2.SetActive(false);
+            redFlag3.SetActive(false);
+            greenFlag3.SetActive(true);
+            redFlag4.SetActive(true);
+            greenFlag4.SetActive(false);
+        }
+
+        if (collision.tag == "flag4")
+        {
+            A = true;
+            if (B == true)
+            {
+                C = true;
+            }
+            x = transform.position.x;
+            y = transform.position.y;
+            redFlag.SetActive(true);
+            greenFlag.SetActive(false);
+            redFlag1.SetActive(true);
+            greenFlag1.SetActive(false);
+            redFlag2.SetActive(true);
+            greenFlag2.SetActive(false);
+            redFlag3.SetActive(true);
+            greenFlag3.SetActive(false);
+            redFlag4.SetActive(false);
+            greenFlag4.SetActive(true);
         }
     }
 }
