@@ -28,22 +28,9 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (time > 3600)
-        {
-            hours = time / 3600;
-            int x = time % 3600;
-            minutes = x / 60;
-            seconds = time % 60;
-            TimerCount.text = (hours + ":" + minutes + ":" + seconds);
-        }
-        else
-        {
-            minutes = time / 60;
-            seconds = time % 60;
-            TimerCount.text = ("" + minutes + ":" + seconds);
-        }
+        
 
-            if (lastScene == false) {
+        if (lastScene == false) {
             t += Time.deltaTime;
             if (t >= 1f)
             {
@@ -54,6 +41,7 @@ public class Timer : MonoBehaviour
         }
         if (lastScene == true)
         {
+            Debug.Log("Counter: " + time);
             if (time > 3600)
             {
                 hours = time / 3600;
@@ -61,14 +49,82 @@ public class Timer : MonoBehaviour
                 minutes = x / 60;
                 seconds = time % 60;
                 Debug.Log("Counter: " + time);
-                TimerObj.text = (hours + ":" + minutes + ":" + seconds);
+                if (minutes >= 10) {
+                    if (seconds >= 10)
+                    {
+                        TimerObj.text = (hours + ":" + minutes + ":" + seconds);
+                    }
+                    else
+                    {
+                        TimerObj.text = (hours + ":" + minutes + ":0" + seconds);
+                    }
+                } else
+                {
+                    if (seconds >= 10)
+                    {
+                        TimerObj.text = (hours + ":0" + minutes + ":" + seconds);
+                    }
+                    else
+                    {
+                        TimerObj.text = (hours + ":0" + minutes + ":0" + seconds);
+                    }
+                }
             }
             else
             {
                 minutes = time / 60;
                 seconds = time % 60;
                 Debug.Log("Counter: " + time);
-                TimerObj.text = ("" + minutes + ":" + seconds);
+                if (seconds >= 10)
+                {
+                    TimerObj.text = (minutes + ":" + seconds);
+                }
+                else
+                {
+                    TimerObj.text = (minutes + ":0" + seconds);
+                }
+            }
+        }
+        if (time > 3600)
+        {
+            hours = time / 3600;
+            int x = time % 3600;
+            minutes = x / 60;
+            seconds = time % 60;
+            if (minutes >= 10)
+            {
+                if (seconds >= 10)
+                {
+                    TimerCount.text = (hours + ":" + minutes + ":" + seconds);
+                }
+                else
+                {
+                    TimerCount.text = (hours + ":" + minutes + ":0" + seconds);
+                }
+            }
+            else
+            {
+                if (seconds >= 10)
+                {
+                    TimerCount.text = (hours + ":0" + minutes + ":" + seconds);
+                }
+                else
+                {
+                    TimerCount.text = (hours + ":0" + minutes + ":0" + seconds);
+                }
+            }
+        }
+        else
+        {
+            minutes = time / 60;
+            seconds = time % 60;
+            if (seconds >= 10)
+            {
+                TimerCount.text = (minutes + ":" + seconds);
+            }
+            else
+            {
+                TimerCount.text = (minutes + ":0" + seconds);
             }
         }
     }

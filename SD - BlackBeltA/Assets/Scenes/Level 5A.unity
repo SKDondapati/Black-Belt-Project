@@ -21860,7 +21860,7 @@ MonoBehaviour:
   openDoor: {fileID: 416601015}
   player: {fileID: 399762115}
   resetLevel: Level 5A
-  nextLevel: WinA
+  nextLevel: Level 6A
   A: 0
   B: 0
   C: 0
