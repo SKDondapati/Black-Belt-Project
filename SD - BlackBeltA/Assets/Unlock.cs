@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
+using System.Linq.Expressions;
 
 public class Unlock : MonoBehaviour
 {
@@ -19,6 +20,10 @@ public class Unlock : MonoBehaviour
     public Boolean A;
     public Boolean B;
     public Boolean C;
+    /*public Boolean D;
+    public Boolean E;
+    public Boolean F;
+    public Boolean G;*/
     public float x;
     public float y;
     public static int q;
@@ -34,12 +39,18 @@ public class Unlock : MonoBehaviour
     public GameObject greenFlag3;
     public GameObject redFlag4;
     public GameObject greenFlag4;
+    /*public GameObject jump;
+    public GameObject speed;*/
     // Start is called before the first frame update
     void Start()
     {
         A = false;
         B = false;
         C = false;
+        /*D = false;
+        E = false;
+        F = false;
+        G = false;*/
         x = transform.position.x;
         y = transform.position.y;
         death = q;
@@ -102,6 +113,18 @@ public class Unlock : MonoBehaviour
             closedDoor.SetActive(true);
         }
 
+       /*f (collision.tag == "jump")
+        {
+            D = true;
+            jump.SetActive(false);
+        }
+
+        if (collision.tag == "speed")
+        {
+            
+            speed.SetActive(false);
+        }*/
+
         if (collision.tag == "ClosedDoor")
         {
             closedDoor.SetActive(false);
@@ -120,6 +143,15 @@ public class Unlock : MonoBehaviour
             {
                 C = true;
             }
+            /*if (D == true)
+            {
+                F = true;
+            }
+            if (E == true)
+            {
+                G = true;
+            }*/
+            
             x = transform.position.x;
             y = transform.position.y;
             redFlag.SetActive(false);
@@ -141,6 +173,7 @@ public class Unlock : MonoBehaviour
             {
                 C = true;
             }
+
             x = transform.position.x;
             y = transform.position.y;
             redFlag.SetActive(true);
@@ -162,6 +195,7 @@ public class Unlock : MonoBehaviour
             {
                 C = true;
             }
+            
             x = transform.position.x;
             y = transform.position.y;
             redFlag.SetActive(true);
