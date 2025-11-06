@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
@@ -9,6 +10,7 @@ public class Timer : MonoBehaviour
 {
     public static float t = 0;
     public static int time = 0;
+    public int x = 0;
     public int minutes = 0;
     public int seconds = 0;
     public int hours = 0;
@@ -22,13 +24,16 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        x = time;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            time = x;
+        }
 
         if (lastScene == false) {
             t += Time.deltaTime;

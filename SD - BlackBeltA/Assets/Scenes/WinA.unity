@@ -370,7 +370,18 @@ MonoBehaviour:
   C: 0
   x: 0
   y: 0
+  death: 0
   deathText: {fileID: 1968903307}
+  redFlag: {fileID: 0}
+  greenFlag: {fileID: 0}
+  redFlag1: {fileID: 0}
+  greenFlag1: {fileID: 0}
+  redFlag2: {fileID: 0}
+  greenFlag2: {fileID: 0}
+  redFlag3: {fileID: 0}
+  greenFlag3: {fileID: 0}
+  redFlag4: {fileID: 0}
+  greenFlag4: {fileID: 0}
 --- !u!114 &524505553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,6 +403,12 @@ MonoBehaviour:
   groundCheckRadius: 0.2
   jump: {fileID: 0}
   speed: {fileID: 0}
+  jumpA: 0
+  jumpB: 0
+  speedA: 0
+  speedB: 0
+  x: 0
+  y: 0
 --- !u!1 &544986091
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,7 +5164,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 16.662598
+  orthographic size: 16.539415
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -31366,11 +31383,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b20ad95c0daeb3c478d2a0578bc2883f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: 0
   minutes: 0
   seconds: 0
   hours: 0
   lastScene: 0
   TimerObj: {fileID: 0}
+  TimerCount: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

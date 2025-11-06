@@ -8328,6 +8328,12 @@ MonoBehaviour:
   groundCheckRadius: 0.2
   jump: {fileID: 1636772419}
   speed: {fileID: 1897422060}
+  jumpA: 0
+  jumpB: 0
+  speedA: 0
+  speedB: 0
+  x: 0
+  y: 0
 --- !u!114 &1803055972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8346,7 +8352,7 @@ MonoBehaviour:
   openDoor: {fileID: 2102876666}
   player: {fileID: 1803055970}
   resetLevel: Level 9A
-  nextLevel: WinA
+  nextLevel: Level 10A
   A: 0
   B: 0
   C: 0
