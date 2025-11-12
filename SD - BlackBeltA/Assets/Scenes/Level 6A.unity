@@ -151,13 +151,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6979d52fda0579441a2122b95abaf337, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -733,6 +733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 377468190}
+  - component: {fileID: 377468191}
   m_Layer: 0
   m_Name: GreenFlag (1)
   m_TagString: flag1
@@ -757,6 +758,102 @@ Transform:
   - {fileID: 1455159515}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &377468191
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377468189}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7bd6b897eb5ca4b7d88a205c4a51640c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &494027402
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,6 +1013,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1688881638449150, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
       insertIndex: -1
       addedObject: {fileID: 548952438}
+    - targetCorrespondingSourceObject: {fileID: 1688881638449150, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 548952439}
   m_SourcePrefab: {fileID: 100100000, guid: 5808ca7cfa9bad240b1c2c52003f4817, type: 3}
 --- !u!4 &548952436 stripped
 Transform:
@@ -972,6 +1072,102 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0625, y: 1.1666666}
   m_EdgeRadius: 0
+--- !u!82 &548952439
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548952437}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 79180f511d89441b9aa23ccae1992fe0, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &556344875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,6 +1656,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1020289905}
+  - component: {fileID: 1020289906}
   m_Layer: 0
   m_Name: GreenFlag
   m_TagString: flag
@@ -1484,6 +1681,102 @@ Transform:
   - {fileID: 1466756779}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1020289906
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020289904}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7bd6b897eb5ca4b7d88a205c4a51640c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1028114912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,6 +1788,7 @@ GameObject:
   - component: {fileID: 1028114915}
   - component: {fileID: 1028114914}
   - component: {fileID: 1028114913}
+  - component: {fileID: 1028114916}
   m_Layer: 0
   m_Name: OpenDoor
   m_TagString: OpenDoor
@@ -1614,6 +1908,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 222069575}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1028114916
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028114912}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2667a0a008b044e218b63df62e2be749, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1052073963
 GameObject:
   m_ObjectHideFlags: 0
@@ -3822,6 +4212,8 @@ GameObject:
   - component: {fileID: 1436600074}
   - component: {fileID: 1436600073}
   - component: {fileID: 1436600072}
+  - component: {fileID: 1436600076}
+  - component: {fileID: 1436600075}
   m_Layer: 3
   m_Name: Ground
   m_TagString: Ground
@@ -3875,7 +4267,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
@@ -7547,6 +7939,426 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!66 &1436600075
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436600070}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1436600072}
+    m_ColliderPaths:
+    - - X: 410000000
+        Y: -930000000
+      - X: -250000000
+        Y: -930000000
+      - X: -250000000
+        Y: -1230000000
+      - X: 410000000
+        Y: -1230000000
+    - - X: -100000000
+        Y: -1220000000
+      - X: -100000000
+        Y: -1170000000
+      - X: -90000000
+        Y: -1170000000
+      - X: -90000000
+        Y: -1160000000
+      - X: -100000000
+        Y: -1160000000
+      - X: -100000000
+        Y: -1150000000
+      - X: -110000000
+        Y: -1150000000
+      - X: -110000000
+        Y: -1160000000
+      - X: -120000000
+        Y: -1160000000
+      - X: -120000000
+        Y: -1170000000
+      - X: -180000000
+        Y: -1170000000
+      - X: -180000000
+        Y: -1160000000
+      - X: -200000000
+        Y: -1160000000
+      - X: -200000000
+        Y: -1140000000
+      - X: -210000000
+        Y: -1140000000
+      - X: -210000000
+        Y: -1130000000
+      - X: -220000000
+        Y: -1130000000
+      - X: -220000000
+        Y: -1120000000
+      - X: -230000000
+        Y: -1120000000
+      - X: -230000000
+        Y: -1110000000
+      - X: -240000000
+        Y: -1110000000
+      - X: -240000000
+        Y: -940000000
+      - X: 90000000
+        Y: -940000000
+      - X: 90000000
+        Y: -950000000
+      - X: 100000000
+        Y: -950000000
+      - X: 100000000
+        Y: -940000000
+      - X: 400000000
+        Y: -940000000
+      - X: 400000000
+        Y: -1220000000
+    - - X: 70000000
+        Y: -950000000
+      - X: 60000000
+        Y: -950000000
+      - X: 60000000
+        Y: -960000000
+      - X: 70000000
+        Y: -960000000
+    - - X: 30000000
+        Y: -980000000
+      - X: 0
+        Y: -980000000
+      - X: 0
+        Y: -990000000
+      - X: 30000000
+        Y: -990000000
+    - - X: 60000000
+        Y: -980000000
+      - X: 50000000
+        Y: -980000000
+      - X: 50000000
+        Y: -990000000
+      - X: 60000000
+        Y: -990000000
+    - - X: 80000000
+        Y: -980000000
+      - X: 70000000
+        Y: -980000000
+      - X: 70000000
+        Y: -990000000
+      - X: 80000000
+        Y: -990000000
+    - - X: 110000000
+        Y: -980000000
+      - X: 100000000
+        Y: -980000000
+      - X: 100000000
+        Y: -990000000
+      - X: 110000000
+        Y: -990000000
+    - - X: 190000000
+        Y: -990000000
+      - X: 180000000
+        Y: -990000000
+      - X: 180000000
+        Y: -1000000000
+      - X: 190000000
+        Y: -1000000000
+    - - X: 230000000
+        Y: -990000000
+      - X: 220000000
+        Y: -990000000
+      - X: 220000000
+        Y: -1000000000
+      - X: 230000000
+        Y: -1000000000
+    - - X: 160000000
+        Y: -1000000000
+      - X: 150000000
+        Y: -1000000000
+      - X: 150000000
+        Y: -1010000000
+      - X: 160000000
+        Y: -1010000000
+    - - X: -170000000
+        Y: -1090000000
+      - X: -180000000
+        Y: -1090000000
+      - X: -180000000
+        Y: -1100000000
+      - X: -170000000
+        Y: -1100000000
+    - - X: -200000000
+        Y: -1100000000
+      - X: -210000000
+        Y: -1100000000
+      - X: -210000000
+        Y: -1110000000
+      - X: -200000000
+        Y: -1110000000
+    - - X: -150000000
+        Y: -1100000000
+      - X: -160000000
+        Y: -1100000000
+      - X: -160000000
+        Y: -1110000000
+      - X: -150000000
+        Y: -1110000000
+    - - X: -110000000
+        Y: -1100000000
+      - X: -120000000
+        Y: -1100000000
+      - X: -120000000
+        Y: -1110000000
+      - X: -110000000
+        Y: -1110000000
+    - - X: 200000000
+        Y: -1200000000
+      - X: 170000000
+        Y: -1200000000
+      - X: 170000000
+        Y: -1120000000
+      - X: 270000000
+        Y: -1120000000
+      - X: 270000000
+        Y: -1110000000
+      - X: 160000000
+        Y: -1110000000
+      - X: 160000000
+        Y: -1210000000
+      - X: 200000000
+        Y: -1210000000
+    - - X: -60000000
+        Y: -1120000000
+      - X: -70000000
+        Y: -1120000000
+      - X: -70000000
+        Y: -1140000000
+      - X: -60000000
+        Y: -1140000000
+    - - X: 320000000
+        Y: -1140000000
+      - X: 290000000
+        Y: -1140000000
+      - X: 290000000
+        Y: -1150000000
+      - X: 320000000
+        Y: -1150000000
+    - - X: -70000000
+        Y: -1140000000
+      - X: -80000000
+        Y: -1140000000
+      - X: -80000000
+        Y: -1150000000
+      - X: -70000000
+        Y: -1150000000
+    - - X: -160000000
+        Y: -1140000000
+      - X: -170000000
+        Y: -1140000000
+      - X: -170000000
+        Y: -1150000000
+      - X: -160000000
+        Y: -1150000000
+    - - X: -130000000
+        Y: -1140000000
+      - X: -140000000
+        Y: -1140000000
+      - X: -140000000
+        Y: -1150000000
+      - X: -130000000
+        Y: -1150000000
+    - - X: -80000000
+        Y: -1150000000
+      - X: -90000000
+        Y: -1150000000
+      - X: -90000000
+        Y: -1160000000
+      - X: -80000000
+        Y: -1160000000
+    - - X: 390000000
+        Y: -1190000000
+      - X: 380000000
+        Y: -1190000000
+      - X: 380000000
+        Y: -1200000000
+      - X: 390000000
+        Y: -1200000000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 40.999973, y: -123}
+      - {x: 40.999973, y: -93}
+      - {x: -25, y: -93.00003}
+      - {x: -24.999971, y: -123}
+    - - {x: 40, y: -121.99998}
+      - {x: -10, y: -121.99998}
+      - {x: -9.99997, y: -117}
+      - {x: -9, y: -116.99998}
+      - {x: -9.00003, y: -116}
+      - {x: -10, y: -115.99998}
+      - {x: -10.00003, y: -115}
+      - {x: -11, y: -115.00003}
+      - {x: -11.00003, y: -116}
+      - {x: -12, y: -116.00003}
+      - {x: -12.00003, y: -117}
+      - {x: -18, y: -116.99998}
+      - {x: -18.000029, y: -116}
+      - {x: -20, y: -115.99998}
+      - {x: -20.000029, y: -114}
+      - {x: -21, y: -113.99998}
+      - {x: -21.000029, y: -113}
+      - {x: -22, y: -112.99998}
+      - {x: -22.000029, y: -112}
+      - {x: -23, y: -111.99998}
+      - {x: -23.000029, y: -111}
+      - {x: -24, y: -110.99998}
+      - {x: -23.999971, y: -94}
+      - {x: 9, y: -94.00003}
+      - {x: 9.00003, y: -95}
+      - {x: 10, y: -94.99997}
+      - {x: 10.00003, y: -94}
+      - {x: 40, y: -94.00003}
+    - - {x: 6.9999704, y: -96}
+      - {x: 6.9999704, y: -95}
+      - {x: 6, y: -95.00003}
+      - {x: 6.000029, y: -96}
+    - - {x: 5.999971, y: -99}
+      - {x: 5.999971, y: -98}
+      - {x: 5, y: -98.00003}
+      - {x: 5.000029, y: -99}
+    - - {x: 2.999971, y: -99}
+      - {x: 2.999971, y: -98}
+      - {x: 0, y: -98.00003}
+      - {x: 0.000029300001, y: -99}
+    - - {x: 7.9999704, y: -99}
+      - {x: 7.9999704, y: -98}
+      - {x: 7, y: -98.00003}
+      - {x: 7.0000296, y: -99}
+    - - {x: 10.99997, y: -99}
+      - {x: 10.99997, y: -98}
+      - {x: 10, y: -98.00003}
+      - {x: 10.00003, y: -99}
+    - - {x: 18.999971, y: -100}
+      - {x: 18.999971, y: -99}
+      - {x: 18, y: -99.00003}
+      - {x: 18.000029, y: -100}
+    - - {x: 22.999971, y: -100}
+      - {x: 22.999971, y: -99}
+      - {x: 22, y: -99.00003}
+      - {x: 22.000029, y: -100}
+    - - {x: 15.999971, y: -101}
+      - {x: 15.999971, y: -100}
+      - {x: 15, y: -100.00003}
+      - {x: 15.000029, y: -101}
+    - - {x: -17.000029, y: -110}
+      - {x: -17.000029, y: -109}
+      - {x: -18, y: -109.00003}
+      - {x: -17.999971, y: -110}
+    - - {x: -20.000029, y: -111}
+      - {x: -20.000029, y: -110}
+      - {x: -21, y: -110.00003}
+      - {x: -20.999971, y: -111}
+    - - {x: -15.000029, y: -111}
+      - {x: -15.000029, y: -110}
+      - {x: -16, y: -110.00003}
+      - {x: -15.999971, y: -111}
+    - - {x: -11.00003, y: -111}
+      - {x: -11.00003, y: -110}
+      - {x: -12, y: -110.00003}
+      - {x: -11.99997, y: -111}
+    - - {x: 19.999971, y: -121}
+      - {x: 19.999971, y: -120}
+      - {x: 17, y: -119.99998}
+      - {x: 17.000029, y: -112}
+      - {x: 27, y: -111.99998}
+      - {x: 26.999971, y: -111}
+      - {x: 16, y: -111.00003}
+      - {x: 16.000029, y: -121}
+    - - {x: -6.000029, y: -114}
+      - {x: -6.000029, y: -112}
+      - {x: -7, y: -112.00003}
+      - {x: -6.9999704, y: -114}
+    - - {x: 31.999971, y: -115}
+      - {x: 31.999971, y: -114}
+      - {x: 29, y: -114.00003}
+      - {x: 29.000029, y: -115}
+    - - {x: -7.0000296, y: -115}
+      - {x: -7.0000296, y: -114}
+      - {x: -8, y: -114.00003}
+      - {x: -7.9999704, y: -115}
+    - - {x: -13.00003, y: -115}
+      - {x: -13.00003, y: -114}
+      - {x: -14, y: -114.00003}
+      - {x: -13.999971, y: -115}
+    - - {x: -16.000029, y: -115}
+      - {x: -16.000029, y: -114}
+      - {x: -17, y: -114.00003}
+      - {x: -16.999971, y: -115}
+    - - {x: -8.00003, y: -116}
+      - {x: -8.00003, y: -115}
+      - {x: -9, y: -115.00003}
+      - {x: -8.99997, y: -116}
+    - - {x: 38.999973, y: -120}
+      - {x: 38.999973, y: -119}
+      - {x: 38, y: -119.00003}
+      - {x: 38.00003, y: -120}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 1436600070}
+--- !u!50 &1436600076
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436600070}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1455159514
 GameObject:
   m_ObjectHideFlags: 0
