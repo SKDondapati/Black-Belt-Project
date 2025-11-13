@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 117207298}
   m_Layer: 0
   m_Name: RedFlag (1)
-  m_TagString: flag2
+  m_TagString: flag1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -301726,7 +301726,7 @@ GameObject:
   - component: {fileID: 1994107100}
   m_Layer: 0
   m_Name: RedFlag (2)
-  m_TagString: flag1
+  m_TagString: flag2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
