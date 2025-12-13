@@ -136,6 +136,8 @@ public class Unlock : MonoBehaviour
             SceneManager.LoadScene(nextLevel);
         }
 
+        
+
         if (collision.tag == "flag")
         {
             A = true;

@@ -178,6 +178,16 @@ public class MOVEMENT : MonoBehaviour
             moveSpeed = 10;
             speedA = true;
         }
+
+        if (collision.tag == "speedUp")
+        {
+            moveSpeed = 10;
+        }
+
+        if (collision.tag == "slowDown")
+        {
+            moveSpeed = 5;
+        }
     }
 
     void FixedUpdate()

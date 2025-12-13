@@ -8,7 +8,7 @@ public class EasyMode : MonoBehaviour
 {
     public void ok()
     {
-        SceneManager.LoadScene("Level 1A");
+        SceneManager.LoadScene("Level 1B");
     }
     // Start is called before the first frame update
     void Start()
