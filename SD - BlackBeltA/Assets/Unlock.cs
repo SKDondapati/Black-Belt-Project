@@ -41,6 +41,8 @@ public class Unlock : MonoBehaviour
     public GameObject greenFlag4;
     public GameObject redFlag5;
     public GameObject greenFlag5;
+    public GameObject redFlag6;
+    public GameObject greenFlag6;
     /*public GameObject jump;
     public GameObject speed;*/
     // Start is called before the first frame update
@@ -277,6 +279,30 @@ public class Unlock : MonoBehaviour
             greenFlag4.SetActive(false);
             redFlag5.SetActive(false);
             greenFlag5.SetActive(true);
+        }
+        if (collision.tag == "flag6")
+        {
+            A = true;
+            if (B == true)
+            {
+                C = true;
+            }
+            x = transform.position.x;
+            y = transform.position.y;
+            redFlag.SetActive(true);
+            greenFlag.SetActive(false);
+            redFlag1.SetActive(true);
+            greenFlag1.SetActive(false);
+            redFlag2.SetActive(true);
+            greenFlag2.SetActive(false);
+            redFlag3.SetActive(true);
+            greenFlag3.SetActive(false);
+            redFlag4.SetActive(true);
+            greenFlag4.SetActive(false);
+            redFlag5.SetActive(true);
+            greenFlag5.SetActive(false);
+            redFlag6.SetActive(false);
+            greenFlag6.SetActive(true);
         }
     }
 }

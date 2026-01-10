@@ -22,6 +22,7 @@ TagManager:
   - speedUp
   - slowDown
   - flag5
+  - flag6
   layers:
   - Default
   - TransparentFX

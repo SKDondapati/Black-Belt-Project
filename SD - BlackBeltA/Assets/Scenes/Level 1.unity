@@ -3439,6 +3439,10 @@ MonoBehaviour:
   greenFlag3: {fileID: 0}
   redFlag4: {fileID: 0}
   greenFlag4: {fileID: 0}
+  redFlag5: {fileID: 0}
+  greenFlag5: {fileID: 0}
+  redFlag6: {fileID: 0}
+  greenFlag6: {fileID: 0}
 --- !u!4 &926274507 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1865938915023229146, guid: 3c02ac99ebd71b24cb0f7c53261c4241, type: 3}
