@@ -7,6 +7,8 @@ public class click : MonoBehaviour
     public GameObject play;
     public GameObject pause;
     public GameObject back;
+    public GameObject dimmer;
+    public GameObject pauseMenu;
   
     // Start is called before the first frame update
     void Start()
@@ -28,13 +30,17 @@ public class click : MonoBehaviour
             play.SetActive(false);
             back.SetActive(true);
             pause.SetActive(true);
+            dimmer.SetActive(false);
+            pauseMenu.SetActive(false);
             Time.timeScale = 1f;
         } else
         {
+            dimmer.SetActive(true);
             back.SetActive(false);
             pause.SetActive(false);
             back.SetActive(true);
             play.SetActive(true);
+            pauseMenu.SetActive(true);
             Time.timeScale = 0f;
         }
     }
