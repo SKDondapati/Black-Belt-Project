@@ -9,6 +9,7 @@ public class click : MonoBehaviour
     public GameObject back;
     public GameObject dimmer;
     public GameObject pauseMenu;
+    public GameObject helpMenu;
   
     // Start is called before the first frame update
     void Start()
@@ -24,24 +25,30 @@ public class click : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (play.activeSelf == true)
+        //helpMenu.SetActive(false);
+        if (helpMenu.activeSelf == false)
         {
-            back.SetActive(false);
-            play.SetActive(false);
-            back.SetActive(true);
-            pause.SetActive(true);
-            dimmer.SetActive(false);
-            pauseMenu.SetActive(false);
-            Time.timeScale = 1f;
-        } else
-        {
-            dimmer.SetActive(true);
-            back.SetActive(false);
-            pause.SetActive(false);
-            back.SetActive(true);
-            play.SetActive(true);
-            pauseMenu.SetActive(true);
-            Time.timeScale = 0f;
+            if (play.activeSelf == true)
+            {
+                back.SetActive(false);
+                play.SetActive(false);
+                back.SetActive(true);
+                pause.SetActive(true);
+                dimmer.SetActive(false);
+                pauseMenu.SetActive(false);
+                Time.timeScale = 1f;
+            }
+            else
+            {
+                //dimmer.SetActive(true);
+                back.SetActive(false);
+                pause.SetActive(false);
+                back.SetActive(true);
+                play.SetActive(true);
+                pauseMenu.SetActive(true);
+                Time.timeScale = 0f;
+            }
         }
+        
     }
 }
