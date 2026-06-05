@@ -379,7 +379,6 @@ MonoBehaviour:
   play: {fileID: 279499879}
   pause: {fileID: 1556526295}
   back: {fileID: 321299317}
-  dimmer: {fileID: 1695886226}
   pauseMenu: {fileID: 1722080869}
   helpMenu: {fileID: 423184397}
 --- !u!212 &321299321
@@ -1301,7 +1300,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nightmare Mode
+  m_Text: Hard Mode
 --- !u!222 &750075437
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -7927,7 +7927,6 @@ MonoBehaviour:
   play: {fileID: 1976849359}
   pause: {fileID: 698051266}
   back: {fileID: 1824201964}
-  dimmer: {fileID: 161254760}
   pauseMenu: {fileID: 352400506}
   helpMenu: {fileID: 1132743417}
 --- !u!212 &1824201968
