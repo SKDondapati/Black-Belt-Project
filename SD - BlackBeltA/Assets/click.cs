@@ -7,7 +7,7 @@ public class click : MonoBehaviour
     public GameObject play;
     public GameObject pause;
     public GameObject back;
-    public GameObject dimmer;
+    //public GameObject dimmer;
     public GameObject pauseMenu;
     public GameObject helpMenu;
   
@@ -34,7 +34,7 @@ public class click : MonoBehaviour
                 play.SetActive(false);
                 back.SetActive(true);
                 pause.SetActive(true);
-                dimmer.SetActive(false);
+                //dimmer.SetActive(false);
                 pauseMenu.SetActive(false);
                 Time.timeScale = 1f;
             }
