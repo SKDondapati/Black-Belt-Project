@@ -10,7 +10,7 @@ public class click : MonoBehaviour
     //public GameObject dimmer;
     public GameObject pauseMenu;
     public GameObject pauseMenu2;
-    public GameObject helpMenu;
+    public GameObject helpMenu; 
   
     // Start is called before the first frame update
     void Start()
