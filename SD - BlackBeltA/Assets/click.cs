@@ -9,6 +9,7 @@ public class click : MonoBehaviour
     public GameObject back;
     //public GameObject dimmer;
     public GameObject pauseMenu;
+    public GameObject pauseMenu2;
     public GameObject helpMenu;
   
     // Start is called before the first frame update
@@ -36,6 +37,7 @@ public class click : MonoBehaviour
                 pause.SetActive(true);
                 //dimmer.SetActive(false);
                 pauseMenu.SetActive(false);
+                pauseMenu2.SetActive(false);
                 Time.timeScale = 1f;
             }
             else
@@ -46,6 +48,7 @@ public class click : MonoBehaviour
                 back.SetActive(true);
                 play.SetActive(true);
                 pauseMenu.SetActive(true);
+                pauseMenu2.SetActive(true);
                 Time.timeScale = 0f;
             }
         }
