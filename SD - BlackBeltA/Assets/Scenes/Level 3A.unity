@@ -4479,7 +4479,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5415094, g: 0.9460599, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.74745977, b: 0.8490566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5752,6 +5752,7 @@ MonoBehaviour:
   pause: {fileID: 1708731939}
   back: {fileID: 1098793502}
   pauseMenu: {fileID: 1729505166}
+  pauseMenu2: {fileID: 0}
   helpMenu: {fileID: 74443090}
 --- !u!212 &1098793506
 SpriteRenderer:
@@ -6146,7 +6147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 847, y: 514}
+  m_AnchoredPosition: {x: 892, y: 513}
   m_SizeDelta: {x: 360.8286, y: 89.7551}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1277958528
@@ -6182,7 +6183,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nightmare Mode
+  m_Text: Hard Mode
 --- !u!222 &1277958529
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11449,7 +11450,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.20520502, g: 0, b: 0.42745098, a: 1}
+  m_Color: {r: 0.5529412, g: 0.07058824, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12204,7 +12205,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Level: 2'
+  m_Text: 'Level: 3'
 --- !u!222 &1859120006
 CanvasRenderer:
   m_ObjectHideFlags: 0

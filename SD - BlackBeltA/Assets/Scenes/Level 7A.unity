@@ -907,7 +907,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Level: 1'
+  m_Text: 'Level: 7'
 --- !u!222 &72832375
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14881,7 +14881,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.20392157, g: 0, b: 0.42745098, a: 1}
+  m_Color: {r: 0.5529412, g: 0.07058824, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -95351,7 +95351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 865, y: 507}
+  m_AnchoredPosition: {x: 911, y: 507}
   m_SizeDelta: {x: 313.6409, y: 43.4326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2021584480
@@ -95387,7 +95387,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nightmare Mode
+  m_Text: Hard Mode
 --- !u!222 &2021584481
 CanvasRenderer:
   m_ObjectHideFlags: 0

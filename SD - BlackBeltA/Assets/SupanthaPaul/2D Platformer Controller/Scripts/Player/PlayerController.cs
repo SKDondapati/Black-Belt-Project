@@ -219,19 +219,19 @@ namespace SupanthaPaul
 				m_hasDashedInAir = false;
 			
 			// Jumping*/
-			if(InputSystem.Jump() && m_extraJumps > 0 && !isGrounded && !m_wallGrabbing && 1 < 0)	// extra jumping
+			/*if(InputSystem.Jump() && m_extraJumps > 0 && !isGrounded && !m_wallGrabbing && 1 < 0)	// extra jumping
 			{
 				m_rb.velocity = new Vector2(m_rb.velocity.x, m_extraJumpForce); ;
 				m_extraJumps--;
 				// jumpEffect
 				PoolManager.instance.ReuseObject(jumpEffect, groundCheck.position, Quaternion.identity);
 			}
-			else if(InputSystem.Jump() && (isGrounded || m_groundedRemember > 0f))	// normal single jumping
+			else *//*if(InputSystem.Jump() && (isGrounded || m_groundedRemember > 0f))	// normal single jumping
 			{
 				m_rb.velocity = new Vector2(m_rb.velocity.x, jumpForce);
 				// jumpEffect
 				PoolManager.instance.ReuseObject(jumpEffect, groundCheck.position, Quaternion.identity);
-			}
+			}/*
 			else if(InputSystem.Jump() && m_wallGrabbing && moveInput!=m_onWallSide )		// wall jumping off the wall
 			{
 				m_wallGrabbing = false;
@@ -249,7 +249,7 @@ namespace SupanthaPaul
 				if (m_playerSide == m_onWallSide)
 					Flip();
 				m_rb.AddForce(new Vector2(-m_onWallSide * wallClimbForce.x, wallClimbForce.y), ForceMode2D.Impulse);
-			}
+			}*/
 
 		}
 
