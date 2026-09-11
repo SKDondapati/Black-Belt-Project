@@ -2021,7 +2021,7 @@ Transform:
   m_GameObject: {fileID: 18641100}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2088,6 +2088,7 @@ MonoBehaviour:
   pause: {fileID: 1256693423}
   back: {fileID: 18641100}
   pauseMenu: {fileID: 1031179003}
+  pauseMenu2: {fileID: 920783727}
   helpMenu: {fileID: 452575288}
 --- !u!212 &18641104
 SpriteRenderer:
@@ -3793,7 +3794,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5415094, g: 0.9460599, b: 1, a: 1}
+  m_Color: {r: 0.47058824, g: 0.84705883, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4300,6 +4301,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &920783727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920783728}
+  m_Layer: 0
+  m_Name: pauseMenu2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &920783728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920783727}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.72589, y: -111.007, z: -33.766098}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &950160932
 GameObject:
   m_ObjectHideFlags: 0
@@ -8141,3 +8173,4 @@ SceneRoots:
   - {fileID: 1436566395}
   - {fileID: 1119959852}
   - {fileID: 421593684}
+  - {fileID: 920783728}

@@ -3158,7 +3158,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5415094, g: 0.9460599, b: 1, a: 1}
+  m_Color: {r: 0.36078432, g: 0.6509804, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3908,6 +3908,37 @@ Transform:
   - {fileID: 602668819}
   - {fileID: 799897193}
   m_Father: {fileID: 864288246}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &851171444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851171445}
+  m_Layer: 0
+  m_Name: pauseMenu2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &851171445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851171444}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.72589, y: -111.007, z: -33.766098}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &863502890
 GameObject:
@@ -8074,6 +8105,7 @@ MonoBehaviour:
   pause: {fileID: 639359163}
   back: {fileID: 1997780915}
   pauseMenu: {fileID: 864288245}
+  pauseMenu2: {fileID: 851171444}
   helpMenu: {fileID: 776175652}
 --- !u!212 &1997780919
 SpriteRenderer:
@@ -8144,3 +8176,4 @@ SceneRoots:
   - {fileID: 448517762}
   - {fileID: 1830017830}
   - {fileID: 351534381}
+  - {fileID: 851171445}

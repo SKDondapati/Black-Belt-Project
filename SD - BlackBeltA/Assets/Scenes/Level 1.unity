@@ -5666,6 +5666,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715442130}
   m_CullTransparentMesh: 1
+--- !u!1 &1720956847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1720956848}
+  m_Layer: 0
+  m_Name: pauseMenu2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1720956848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720956847}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.72589, y: -111.007, z: -33.766098}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1750203410
 GameObject:
   m_ObjectHideFlags: 0
@@ -7928,6 +7959,7 @@ MonoBehaviour:
   pause: {fileID: 698051266}
   back: {fileID: 1824201964}
   pauseMenu: {fileID: 352400506}
+  pauseMenu2: {fileID: 1720956847}
   helpMenu: {fileID: 1132743417}
 --- !u!212 &1824201968
 SpriteRenderer:
@@ -8446,3 +8478,4 @@ SceneRoots:
   - {fileID: 459899855}
   - {fileID: 965843941}
   - {fileID: 1221662028}
+  - {fileID: 1720956848}

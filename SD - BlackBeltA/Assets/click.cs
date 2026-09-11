@@ -21,7 +21,7 @@ public class click : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("Current Time Scale: " + Time.timeScale);
     }
 
     private void OnMouseDown()

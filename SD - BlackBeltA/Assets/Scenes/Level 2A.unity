@@ -2664,7 +2664,7 @@ Transform:
   m_GameObject: {fileID: 564821724}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2731,6 +2731,7 @@ MonoBehaviour:
   pause: {fileID: 154137889}
   back: {fileID: 564821724}
   pauseMenu: {fileID: 1506504567}
+  pauseMenu2: {fileID: 687516602}
   helpMenu: {fileID: 470821297}
 --- !u!212 &564821728
 SpriteRenderer:
@@ -3161,6 +3162,37 @@ Transform:
   - {fileID: 1181045777}
   - {fileID: 1135329774}
   m_Father: {fileID: 1000880909}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &687516602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 687516603}
+  m_Layer: 0
+  m_Name: pauseMenu2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &687516603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687516602}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.72589, y: -111.007, z: -33.766098}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &748295295
 GameObject:
@@ -3627,7 +3659,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5415094, g: 0.9460599, b: 1, a: 1}
+  m_Color: {r: 0.47058824, g: 0.84705883, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9347,6 +9379,7 @@ MonoBehaviour:
   pause: {fileID: 592440014}
   back: {fileID: 2136270980}
   pauseMenu: {fileID: 681006335}
+  pauseMenu2: {fileID: 0}
   helpMenu: {fileID: 510419019}
 --- !u!212 &2136270984
 SpriteRenderer:
@@ -9545,3 +9578,4 @@ SceneRoots:
   - {fileID: 1743795326}
   - {fileID: 1022054619}
   - {fileID: 877246395}
+  - {fileID: 687516603}

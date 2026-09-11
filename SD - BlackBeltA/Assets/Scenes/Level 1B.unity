@@ -2832,6 +2832,7 @@ MonoBehaviour:
   pause: {fileID: 935573808}
   back: {fileID: 363389706}
   pauseMenu: {fileID: 231123382}
+  pauseMenu2: {fileID: 1130313738}
   helpMenu: {fileID: 292349949}
 --- !u!212 &363389710
 SpriteRenderer:
@@ -7223,6 +7224,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095877738}
   m_CullTransparentMesh: 1
+--- !u!1 &1130313738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1130313739}
+  m_Layer: 0
+  m_Name: pauseMenu2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1130313739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130313738}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.72589, y: -111.007, z: -33.766098}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1130530869
 GameObject:
   m_ObjectHideFlags: 0
@@ -8857,3 +8889,4 @@ SceneRoots:
   - {fileID: 1586775786}
   - {fileID: 530105727}
   - {fileID: 2076528159}
+  - {fileID: 1130313739}
